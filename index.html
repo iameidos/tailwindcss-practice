@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Practice Tailwindcss - BWA</title>
+
+    <!-- Tailwindcss -->
+    <link rel="stylesheet" href="./assets/style/output.css" />
+
+    <!-- Fonts Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="font-poppins">
+    <!-- Header -->
+    <header class="p-6 xl:px-14 xl:py-8">
+      <nav class="flex justify-between items-center">
+        <img src="./assets/images/logo.png" alt="Logo Benarr" />
+
+        <ul class="hidden lg:flex items-center gap-8 text-sm">
+          <li>
+            <a href="#" class="font-bold">Home</a>
+          </li>
+          <li>
+            <a href="#">Features</a>
+          </li>
+          <li>
+            <a href="#">Showcase</a>
+          </li>
+          <li>
+            <a href="#">Pricing</a>
+          </li>
+          <li>
+            <a href="#">Tertimonials</a>
+          </li>
+        </ul>
+
+        <button class="hidden md:block py-2 px-5 rounded-xl bg-black text-white font-semibold">Signin</button>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="p-10 xl:p-14 min-h-screen">
+      <div class="w-full flex flex-col gap-5 xl:flex-row xl:justify-center xl:items-center mb-12">
+        <div class="w-full xl:w-1/2">
+          <!-- Badges -->
+          <div class="flex w-max md:mx-auto xl:mx-0 gap-x-2 py-2 px-4 rounded-full font-bold text-sm bg-primary-purple-100">
+            <img src="./assets/icons/cup.png" alt="Prizes Cup" class="h-max" />
+            <p>
+              <span class="text-primary-purple-500">12.000</span>
+              top Freelancers signed up last week
+            </p>
+          </div>
+
+          <div class="md:text-center xl:text-start">
+            <h1 class="text-3xl xl:text-6xl font-bold my-5">Clients Analytics for Freelancer</h1>
+            <p class="my-10">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br class="hidden md:block" />
+              Id sapiente saepe expedita ipsum ducimus magni!
+            </p>
+            <div class="flex md:justify-center xl:justify-start gap-2 text-sm">
+              <button class="py-2 px-4 rounded-lg bg-primary-purple-500 text-white font-semibold">Explore Features</button>
+              <button class="py-2 px-4 rounded-lg bg-black text-white font-semibold flex gap-x-2 items-center">
+                <img src="./assets/icons/video-circle.png" alt="Video Circle" />
+                Watch Demo
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="xl:w-1/2">
+          <img src="./assets/images/hero-image.png" alt="Hero Banner" class="hidden xl:block xl:mx-auto" />
+        </div>
+      </div>
+
+      <!-- Companies -->
+      <div>
+        <h3 class="font-semibold md:text-xl text-center text-lg py-8">
+          Over <span class="text-primary-purple-500 font-bold">275.000</span> big companies <br />
+          trused Benarr for their <span class="text-primary-purple-500 font-bold">business.</span>
+        </h3>
+        <div class="flex md:justify-center flex-wrap gap-4 md:gap-6">
+          <img src="./assets/logo-clients/client-1.png" alt="Client First" />
+          <img src="./assets/logo-clients/client-2.png" alt="Client Second" />
+          <img src="./assets/logo-clients/client-3.png" alt="Client Third" />
+          <img src="./assets/logo-clients/client-5.png" alt="Client Fourth" />
+          <img src="./assets/logo-clients/client-6.png" alt="Client Fifth" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Card Section -->
+    <div class="bg-primary-gray-100">
+      <div class="p-10">
+        <div class="mb-8">
+          <div class="w-max py-2 px-4 rounded-full bg-primary-purple-500 text-white font-bold mb-8">Top Features</div>
+          <h2 class="text-2xl font-bold">Built-in Robust Features Versatile Purposes</h2>
+        </div>
+        <div>
+          <div class="flex flex-col lg:flex-row gap-5 mb-5">
+            <!-- Card -->
+            <div class="w-full lg:w-1/2 p-8 rounded-2xl bg-white">
+              <img src="./assets/cards/card-1.png" alt="Card First" />
+              <h5 class="text-xl font-bold mb-2">Real Tracking</h5>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. unde!</p>
+            </div>
+            <!-- Card -->
+            <div class="w-full lg:w-1/2 p-8 rounded-2xl bg-white">
+              <img src="./assets/cards/card-2.png" alt="Card First" />
+              <h5 class="text-xl font-bold mb-2">Email Marketing</h5>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. unde!</p>
+            </div>
+            <!-- Card -->
+            <div class="w-full lg:w-1/2 p-8 rounded-2xl bg-white">
+              <img src="./assets/cards/card-3.png" alt="Card First" />
+              <h5 class="text-xl font-bold mb-2">Payment Gateway</h5>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. unde!</p>
+            </div>
+          </div>
+          <div class="flex flex-col lg:flex-row gap-5 mb-5">
+            <!-- Card -->
+            <div class="w-full lg:w-1/2 p-8 rounded-2xl bg-white">
+              <img src="./assets/cards/card-4.png" alt="Card First" />
+              <h5 class="text-xl font-bold mb-2">Avoid Client Fraud</h5>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. unde!</p>
+            </div>
+            <!-- Card -->
+            <div class="w-full lg:w-1/2 p-8 rounded-2xl bg-white">
+              <img src="./assets/cards/card-5.png" alt="Card First" />
+              <h5 class="text-xl font-bold mb-2">More Automations</h5>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. unde!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Showcase Section -->
+    <div class="flex flex-col lg:flex-row p-10 gap-8">
+      <div class="w-full lg:w-1/2 order-2">
+        <div class="">
+          <div class="w-max py-2 px-4 rounded-full bg-primary-yellow-500 text-white font-bold mb-8">Built For Winners</div>
+          <h2 class="text-2xl font-bold mb-2">Watch How It Works</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo voluptas aperiam eaque fugit impedit placeat laboriosam quo esse! Nemo, eum?</p>
+        </div>
+
+        <ul class="font-semibold flex flex-col gap-4 my-10">
+          <li class="flex gap-x-2 items-center">
+            <img src="./assets/icons/check-orange.png" alt="check-orange" class="h-max" />
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+          </li>
+          <li class="flex gap-x-2 items-center">
+            <img src="./assets/icons/check-orange.png" alt="check-orange" class="h-max" />
+            <p>Lorem ipsum dolor sit amet.</p>
+          </li>
+          <li class="flex gap-x-2 items-center">
+            <img src="./assets/icons/check-orange.png" alt="check-orange" class="h-max" />
+            <p>Lorem ipsum dolor sit amet.</p>
+          </li>
+          <li class="flex gap-x-2 items-center">
+            <img src="./assets/icons/check-orange.png" alt="check-orange" class="h-max" />
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+          </li>
+          <li class="flex gap-x-2 items-center">
+            <img src="./assets/icons/check-orange.png" alt="check-orange" class="h-max" />
+            <p>Lorem ipsum dolor sit.</p>
+          </li>
+        </ul>
+
+        <div class="flex flex-col md:flex-row gap-5">
+          <button class="order-2 md:order-1 w-full md:w-max py-2 px-4 lg:px-2 rounded-lg bg-primary-purple-500 text-white font-semibold">Get Free Trials</button>
+
+          <div class="order-1 md:order-2 flex items-center gap-x-2">
+            <div class="flex items-center">
+              <img src="./assets/persons/person-1.png" alt="Person-1" class="w-10 rounded-full" />
+              <img src="./assets/persons/person-2.png" alt="person-2" class="w-10 rounded-full m-[-10px]" />
+              <img src="./assets/persons/person-3.png" alt="Person-3" class="w-10 rounded-full" />
+            </div>
+            <p><span class="font-bold">992</span> people just signed up</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full lg:w-1/2 order-1">
+        <img src="./assets/images/preview.png" alt="Preview Images" class="mx-auto" />
+      </div>
+    </div>
+
+    <!-- Pricing Section -->
+    <div class="bg-primary-gray-100">
+      <div class="p-10 flex flex-col lg:flex-row gap-5">
+        <div class="w-full lg:w-1/3 mb-10">
+          <div>
+            <div class="w-max py-2 px-4 rounded-full bg-primary-aqua-300 text-white font-bold mb-8">Good Invesment</div>
+            <h2 class="text-2xl font-bold mb-2">Most Friendly Pricing Plans For Everyone</h2>
+            <p class="my-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eligendi voluptatum est.</p>
+          </div>
+
+          <div class="flex flex-wrap gap-8">
+            <img src="./assets/logo-clients/client-1.png" alt="Client-1" />
+            <img src="./assets/logo-clients/client-2.png" alt="client-2" />
+            <img src="./assets/logo-clients/client-3.png" alt="Client-3" />
+            <img src="./assets/logo-clients/client-5.png" alt="Client-5" />
+          </div>
+        </div>
+
+        <div class="w-full lg:w-2/3 flex flex-col lg:flex-row gap-5">
+          <!-- Card Pricing -->
+          <div class="p-5 rounded-3xl bg-white h-max">
+            <div>
+              <p class="font-bold text-lg">Professional</p>
+              <p class="my-5 text-primary-gray-200"><span class="font-bold text-3xl text-black">$4,999</span>/month</p>
+              <p class="text-primary-gray-200">Good for Freelancer having 5-15 clients per month about twice.</p>
+            </div>
+
+            <ul class="font-semibold flex flex-col gap-3 my-10">
+              <li class="flex gap-x-2">
+                <img src="./assets/icons/check-orange.png" alt="check-orange" class="h-max" />
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </li>
+              <li class="flex gap-x-2">
+                <img src="./assets/icons/check-orange.png" alt="check-orange" class="h-max" />
+                <p>Lorem ipsum dolor sit amet.</p>
+              </li>
+              <li class="flex gap-x-2">
+                <img src="./assets/icons/check-orange.png" alt="check-orange" class="h-max" />
+                <p>Lorem ipsum dolor sit amet.</p>
+              </li>
+              <li class="flex gap-x-2">
+                <img src="./assets/icons/check-orange.png" alt="check-orange" class="h-max" />
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </li>
+            </ul>
+
+            <button class="w-full py-2 px-4 rounded-xl bg-black text-white font-semibold">Get Package</button>
+          </div>
+
+          <div class="p-5 rounded-3xl bg-white">
+            <div>
+              <p class="font-bold text-lg">For Team</p>
+              <p class="my-5 text-primary-gray-200"><span class="font-bold text-3xl text-black">$18,500</span>/month</p>
+              <p class="text-primary-gray-200">Good for Freelancer having 5-15 clients per month about twice.</p>
+            </div>
+
+            <ul class="font-semibold flex flex-col gap-3 my-10">
+              <li class="flex gap-x-2">
+                <img src="./assets/icons/check-orange.png" alt="check-orange" class="h-max" />
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </li>
+              <li class="flex gap-x-2">
+                <img src="./assets/icons/check-orange.png" alt="check-orange" class="h-max" />
+                <p>Lorem ipsum dolor sit amet.</p>
+              </li>
+              <li class="flex gap-x-2">
+                <img src="./assets/icons/check-orange.png" alt="check-orange" class="h-max" />
+                <p>Lorem ipsum dolor sit amet.</p>
+              </li>
+              <li class="flex gap-x-2">
+                <img src="./assets/icons/check-orange.png" alt="check-orange" class="h-max" />
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </li>
+              <li class="flex gap-x-2">
+                <img src="./assets/icons/check-purple.png" alt="check-purple" class="h-max" />
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </li>
+              <li class="flex gap-x-2">
+                <img src="./assets/icons/check-purple.png" alt="check-purple" class="h-max" />
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </li>
+              <li class="flex gap-x-2">
+                <img src="./assets/icons/check-purple.png" alt="check-purple" class="h-max" />
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </li>
+              <li class="flex gap-x-2">
+                <img src="./assets/icons/check-purple.png" alt="check-purple" class="h-max" />
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </li>
+            </ul>
+
+            <button class="w-full py-2 px-4 rounded-xl bg-primary-purple-500 text-white font-semibold">Get Package</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="p-10">
+      <div class="flex flex-col justify-center items-center text-center mb-12">
+        <div class="w-max py-2 px-4 rounded-full bg-primary-purple-500 text-white font-bold mb-8">Customers Success</div>
+        <h2 class="text-2xl font-bold">
+          Listen what they're <br class="hidden lg:block" />
+          saying about Benarr
+        </h2>
+      </div>
+
+      <div class="flex flex-col md:flex-row flex-wrap gap-5 md:gap-0">
+        <!-- Card Testimonial 1 -->
+        <div class="w-full md:w-1/2 lg:w-1/3 p-8 rounded-3xl hover:shadow-md transition-all border">
+          <img src="./assets/persons/person-1.png" alt="Testimonials-1" class="rounded-full" />
+          <p class="my-5">Benarr helped us boosting our clients prospective to get more high quality projects ever.</p>
+          <div>
+            <p class="font-bold text-xl">Sammy</p>
+            <p class="text-primary-gray-200">CMO, Akuna Pixela Team</p>
+          </div>
+        </div>
+
+        <!-- Card Testimonial 2 -->
+        <div class="w-full md:w-1/2 lg:w-1/3 p-8 rounded-3xl hover:shadow-sm transition-all border">
+          <img src="./assets/persons/person-2.png" alt="Testimonials-2" class="rounded-full" />
+          <p class="my-5">With great ecosystem Benarr we were able secure top notch projects from companies</p>
+          <div>
+            <p class="font-bold text-xl">Paul Klause</p>
+            <p class="text-primary-gray-200">CMO, Akuna Pixela Team</p>
+          </div>
+        </div>
+
+        <!-- Card Testimonial 3 -->
+        <div class="w-full p-8 lg:w-1/3 rounded-3xl hover:shadow-sm transition-all border">
+          <img src="./assets/persons/person-3.png" alt="Testimonials-3" class="rounded-full" />
+          <p class="my-5">Benarr helped us boosting our clients prospective to get more high quality projects ever.</p>
+          <div>
+            <p class="font-bold text-xl">Lili Krans</p>
+            <p class="text-primary-gray-200">CMO, Akuna Pixela Team</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="p-10">
+      <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-5 border-t py-5">
+        <img src="./assets/./images/logo.png" alt="Logo Benarr" class="w-max h-max" />
+        <p class="text-sm">Copyright © 2025 iamEiDos. <span class="text-primary-gray-200">All right reserved.</span></p>
+      </div>
+    </div>
+  </body>
+</html>
