@@ -17,3 +17,7 @@ h1 {
 h2 {
   @apply text-2xl xl:text-4xl font-bold;
 }
+
+.card-testimony {
+  @apply w-full rounded-xl hover:shadow-md hover:cursor-pointer transition-all border;
+}
